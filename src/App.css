@@ -1,0 +1,313 @@
+/* ---------------------------- COMMON ------------------------------ */
+.display_flex{
+  display: flex;
+}
+
+.align_item_center{
+  align-items: center;
+}
+
+.wrap{
+  flex-wrap: wrap;
+}
+
+.flex_column{
+  flex-direction: column;
+}
+
+.justify_center{
+  justify-content: center;
+}
+
+.justify_evenly{
+  justify-content: space-evenly;
+}
+
+.justify_between{
+  justify-content: space-between;
+}
+
+.justify_around{
+  justify-content: space-around;
+}
+
+.white_bg{
+  background-color: white;
+}
+
+.color_grey{
+  color: rgba(153, 156, 160, 1);
+}
+.color_white{
+  color: #ffffff;
+}
+
+.text_center{
+  text-align: center;
+}
+
+.input_border{
+  border: 1px solid#EBEBEB !important;
+}
+
+.main_bg{
+  background: linear-gradient(#4285F4,#286DE0);
+}
+
+/* ----------------- SIGN IN PAGE-------------------------------- */
+.container{
+  display: flex;
+  justify-content: space-around;
+  min-height: 100vh !important;
+}
+
+.board{
+  clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 0%  calc(100% - -281%));
+}
+@media (max-width: 1000px) {
+  .board {
+    display: none;
+  }
+}
+
+.sign_contain{
+  margin: auto;
+  width: 422.64px;
+  margin-top: 13%;
+  margin-bottom: 0%;
+}
+
+@media (max-width: 530px) {
+  .sign_contain {
+   width: 300px;
+   /* margin: auto; */
+  }
+}
+
+@media (max-width:530px) {
+  .goo_app_contain{
+    flex-direction: column;
+  }
+}
+
+.google_apple_button{
+  width: 197.6px;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  height: 32.93px;
+  border: none;
+}
+
+.margin{
+  margin: 9px;
+}
+
+.form{
+  width: 400.64px;
+  padding: 30px;
+  border-radius: 20px;
+  height: 347.99px;
+}
+
+@media (max-width: 530px) {
+  .form {
+   width: 300px;
+  }
+}
+
+.form_input_bg{
+  background-color: #F5F5F5;
+}
+
+.button_bg{
+  background-color: #4285F4;
+}
+
+.vertical_margin{
+  margin: 10px 0px;
+  
+}
+
+.form-control{
+  width: 356.77px;
+  height: 43.91px;
+  border-radius: 10px;
+  border: none;
+  padding: 0px 10px;
+}
+@media (max-width: 530px) {
+  .form-control {
+   width: 250px;
+  }
+}
+.social_icons{
+  position: relative;
+  bottom: 5%;
+  /* margin-left: 20%; */
+  left: 20%;
+  column-gap: 50px;
+}
+
+.icon_size{
+  width: 50px;
+  height: 48px;
+}
+
+@media (max-width: 1400px) {
+  .icon_size {
+    width: 30px; /* Adjusted width for smaller screens */
+    height: 28px; /* Adjusted height for smaller screens */
+  }
+}
+
+.logo{
+  position: relative;
+  top: 59px;
+  left: 72px;
+}
+
+/* --------------------- DASHBOARD--------------------------- */
+
+/* Navbar */
+.nav_items{
+  column-gap: 10px;
+  font-size: 18px;
+  margin: 0px;
+  font-weight: 400;
+}
+
+.navbar{
+  width: 15%;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 1% 0%;
+}
+
+@media (max-width: 1000px) {
+  .navbar {
+    display: none;
+  }
+}
+
+/* Header */
+@media (max-width:700px) {
+  .header_contain{
+    flex-direction: column;
+  }
+}
+
+/* Section-1 */
+@media (max-width:700px) {
+  
+  .sec1_contain{
+    justify-content: center;
+  }
+}
+
+/* card */
+
+.card{
+  width: 198px;
+  height: 80px;
+  padding: 20px;
+  background-color: #FFFFFF;
+  border: 2px solid #E0E0E0;
+  border-radius: 20px;
+  box-shadow: #626262 15%;
+}
+
+.badge{
+  background-color: #E9F9EB;
+  border-radius: 34px;
+  width: 47px;
+  height: 24px;
+  text-align: center;
+  line-height: 25px;
+  margin: 0%;
+  font-size: 10px;
+  color: #4AD15F;
+}
+
+.amount{
+  font-size: 21px;
+  margin: 0%;
+  font-weight: 700;
+}
+
+.card-text{
+  margin: 4% 0px;
+  font-size: 11px;
+}
+
+.icon{
+  font-size: 20px;
+  padding: 7px;
+  border-radius: 50%;
+}
+
+/* Section-2 */
+
+.graph_container{
+  height: 360px;
+  margin: auto;
+  background-color: #ffffff;
+  border: 2px solid #E0E0E0;
+  border-radius: 20px;
+  box-shadow: #626262 15%;
+}
+
+.barGraph{
+  margin: auto !important;
+  height: 360px;
+}
+@media (max-width: 1400px) {
+  .barGraph{
+    height: 300px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .barGraph{
+    height: 250px;
+  }
+}
+
+
+/* Section-3 */
+
+@media (max-width: 1000px) {
+  .sec3_contain{
+    flex-wrap: wrap;
+  }
+}
+
+/* DoughnutChart */
+.Dough_container{
+  width: 580px;
+  height: 256px;
+  background-color: #ffffff;
+  border: 2px solid #E0E0E0;
+  border-radius: 20px;
+  box-shadow: #626262 15%;
+}
+
+
+/* Modal  */
+/* Basic Tabs */
+.MuiTabs-flexContainer{
+  justify-content: space-around;
+}
+
+.btn{
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+}
+
+.btn-1{
+  padding: 15px;
+  border-radius: 10px;
+  background: none;
+  border: 1px solid #999CA0;
+}
