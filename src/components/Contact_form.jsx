@@ -1,29 +1,30 @@
 import React from "react";
 
 const Contact_form = (props) => {
-  function addDataToJson(event) {
-    event.preventDefault();
-    var instagram = document.getElementById("instagram").value;
-    var youtube = document.getElementById("youtube").value;
 
-    var newData = {
-      instagram: instagram,
-      youtube: youtube,
-    };
-
-    var existingData = JSON.parse(localStorage.getItem("jsonData")) || [];
-    try {
-      existingData = JSON.parse(localStorage.getItem("jsonData")) || [];
-    } catch (error) {
-      console.error("Error parsing JSON:", error);
-    }
-
-    existingData.push(newData);
-
-    localStorage.setItem("jsonData", JSON.stringify(existingData));
-
-    // alert("Data added to JSON file!");
-  }
+    function addDataToJson() {
+        var instagram = document.getElementById("instagram").value;
+        var youtube = document.getElementById("youtube").value;
+        
+    
+        var newData = {
+          instagram: instagram,
+          youtube: youtube,
+        };
+    
+        var existingData = JSON.parse(localStorage.getItem("jsonData"))||[];
+        try {
+          existingData = JSON.parse(localStorage.getItem("jsonData")) || [];
+        } catch (error) {
+          console.error("Error parsing JSON:", error);
+        }
+    
+        existingData.push(newData);
+    
+        localStorage.setItem("jsonData", JSON.stringify(existingData));
+    
+        // alert("Data added to JSON file!");
+      }
 
   return (
     <>
@@ -71,7 +72,7 @@ const Contact_form = (props) => {
             type="submit"
             className="btn button_bg color_white vertical_margin"
             style={{ fontWeight: "600", fontSize: "14px", cursor: "pointer" }}
-            onClick={(event) => addDataToJson(event)}
+            onClick={addDataToJson}
           >
             Done
           </button>
